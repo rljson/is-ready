@@ -33,13 +33,13 @@ git pull
 
 ## Set pull request title
 
-Replace `Rename IsReady.isReady into IsReady.promise` here and below
+Replace `Replace state by resolve and reset` here and below
 by your new pull request title.
 
 ## Create a feature branch
 
 ```bash
-node scripts/create-branch.js "Rename IsReady.isReady into IsReady.promise"
+node scripts/create-branch.js "Replace state by resolve and reset"
 ```
 
 ## Update dependencies
@@ -65,7 +65,7 @@ In Vscode, press
 
 ```bash
 git add .
-git commit -am"Rename IsReady.isReady into IsReady.promise"
+git commit -am"Replace state by resolve and reset"
 ```
 
 ## Increase version
@@ -96,7 +96,7 @@ node scripts/push-branch.js
 ## Create a pull request
 
 ```bash
-gh pr create --base main --title "Rename IsReady.isReady into IsReady.promise" --body " "
+gh pr create --base main --title "Replace state by resolve and reset" --body " "
 ```
 
 ## Code review

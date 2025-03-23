@@ -20,15 +20,16 @@ export class IsReady {
     return this._state;
   }
 
-  set state(value: boolean) {
-    this._state = value;
-    if (value) {
-      this._callbacks.forEach((callback) => {
-        callback();
-      });
-    }
-
+  resolve(): void {
+    this._state = true;
+    this._callbacks.forEach((callback) => {
+      callback();
+    });
     this._callbacks = [];
+  }
+
+  reset(): void {
+    this._state = false;
   }
 
   get promise(): Promise<void> {

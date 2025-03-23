@@ -23,18 +23,18 @@ describe('IsReady', () => {
     });
   });
 
-  describe('get state, set state', () => {
-    it('returns the state', () => {
+  describe('state', () => {
+    it('returns false until resolve() is called', () => {
       const isReady = IsReady.instance;
       expect(isReady.state).toBe(false);
 
-      isReady.state = true;
+      isReady.resolve();
       expect(isReady.state).toBe(true);
     });
   });
 
   describe('isReady', () => {
-    it('returns a promise that resolves when state is true', async () => {
+    it('returns a promise that resolves when resolve() is called', async () => {
       let isReady0 = false;
       let isReady1 = false;
 
@@ -51,13 +51,24 @@ describe('IsReady', () => {
       expect(isReady0).toBe(false);
       expect(isReady1).toBe(false);
 
-      isReady.state = true;
+      isReady.resolve();
 
       // Wait for the promise to resolve
       await isReady.promise;
 
       expect(isReady0).toBe(true);
       expect(isReady1).toBe(true);
+    });
+  });
+
+  describe('reset', () => {
+    it('resets the state to false', () => {
+      const isReady = IsReady.instance;
+      isReady.resolve();
+      expect(isReady.state).toBe(true);
+
+      isReady.reset();
+      expect(isReady.state).toBe(false);
     });
   });
 });
