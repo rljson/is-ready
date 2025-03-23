@@ -1,9 +1,9 @@
 {
-  "name": "@rljson/template-project",
+  "name": "@rljson/is-ready",
   "version": "0.0.13",
-  "description": "Rljson template-project",
-  "homepage": "https://github.com/rljson/template-project",
-  "bugs": "https://github.com/rljson/template-project/issues",
+  "description": "Rljson is-ready",
+  "homepage": "https://github.com/rljson/is-ready",
+  "bugs": "https://github.com/rljson/is-ready/issues",
   "private": false,
   "license": "MIT",
   "engines": {
@@ -11,9 +11,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rljson/template-project.git"
+    "url": "git+https://github.com/rljson/is-ready.git"
   },
-  "main": "dist/template-project.js",
+  "main": "dist/is-ready.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
