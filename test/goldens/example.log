@@ -1,3 +1,9 @@
-IsReady.example
+IsReady.instance
   Returns an instance of the IsReady.
-    {}
+  The initial state is false.
+    isReady.state: false
+  The isReady promise is pending.
+    didResolve: false
+  The state is set to true.
+    isReady.state: true
+    didResolve: true

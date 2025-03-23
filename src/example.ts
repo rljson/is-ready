@@ -6,8 +6,7 @@
 
 import { IsReady } from './is-ready.ts';
 
-
-export const example = () => {
+export const example = async () => {
   // Print methods
   const l = console.log;
   const h1 = (text: string) => l(`${text}`);
@@ -15,10 +14,25 @@ export const example = () => {
   const p = (text: string) => l(`    ${text}`);
 
   // Example
-  h1('IsReady.example');
+  h1('IsReady.instance');
   h2('Returns an instance of the IsReady.');
-  const example = IsReady.example;
-  p(JSON.stringify(example, null, 2));
+  const isReady = IsReady.example;
+
+  h2('The initial state is false.');
+  p(`isReady.state: ${isReady.state}`);
+
+  h2('The isReady promise is pending.');
+  let didResolve = false;
+  isReady.isReady.then(() => {
+    didResolve = true;
+  });
+  p(`didResolve: ${didResolve}`);
+
+  h2('The state is set to true.');
+  isReady.state = true;
+  await isReady.isReady;
+  p(`isReady.state: ${isReady.state}`);
+  p(`didResolve: ${didResolve}`);
 };
 
 /*
