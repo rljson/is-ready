@@ -31,7 +31,7 @@ export class IsReady {
     this._callbacks = [];
   }
 
-  get isReady(): Promise<void> {
+  get promise(): Promise<void> {
     return this._isReady();
   }
 

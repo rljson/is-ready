@@ -33,13 +33,13 @@ git pull
 
 ## Set pull request title
 
-Replace `Implement class IsReady` here and below
+Replace `Rename IsReady.isReady into IsReady.promise` here and below
 by your new pull request title.
 
 ## Create a feature branch
 
 ```bash
-node scripts/create-branch.js "Implement class IsReady"
+node scripts/create-branch.js "Rename IsReady.isReady into IsReady.promise"
 ```
 
 ## Update dependencies
@@ -65,7 +65,7 @@ In Vscode, press
 
 ```bash
 git add .
-git commit -am"Implement class IsReady"
+git commit -am"Rename IsReady.isReady into IsReady.promise"
 ```
 
 ## Increase version
@@ -96,7 +96,7 @@ node scripts/push-branch.js
 ## Create a pull request
 
 ```bash
-gh pr create --base main --title "Implement class IsReady" --body " "
+gh pr create --base main --title "Rename IsReady.isReady into IsReady.promise" --body " "
 ```
 
 ## Code review
