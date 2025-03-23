@@ -4,6 +4,7 @@ IsReady.instance
     isReady.state: false
   The isReady promise is pending.
     didResolve: false
-  The state is set to true.
+  Call resolve()
+  The state is now true and the promise has resolved.
     isReady.state: true
     didResolve: true

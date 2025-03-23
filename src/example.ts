@@ -28,9 +28,11 @@ export const example = async () => {
   });
   p(`didResolve: ${didResolve}`);
 
-  h2('The state is set to true.');
-  isReady.state = true;
+  h2('Call resolve()');
+  isReady.resolve();
   await isReady.promise;
+
+  h2('The state is now true and the promise has resolved.');
   p(`isReady.state: ${isReady.state}`);
   p(`didResolve: ${didResolve}`);
 };
