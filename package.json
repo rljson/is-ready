@@ -1,6 +1,6 @@
 {
   "name": "@rljson/is-ready",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Rljson is-ready",
   "homepage": "https://github.com/rljson/is-ready",
   "bugs": "https://github.com/rljson/is-ready/issues",
@@ -48,11 +48,7 @@
     "vitest": "^3.0.9",
     "vitest-dom": "^0.1.1"
   },
-  "dependencies": {
-    "@rljson/hash": "^0.0.12",
-    "@rljson/json": "^0.0.18",
-    "@rljson/rljson": "^0.0.21"
-  },
+  "dependencies": {},
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild"
