@@ -22,10 +22,7 @@ export default defineConfig({
     },
     rollupOptions: {
       external: [
-        '@rljson/rljson',
-        '@rljson/json',
-        '@rljson/hash',
-        // Add all peer depencies from package.json here
+        // Add all non dev depencies from package.json here
       ],
       output: {
         globals: {},
