@@ -23,14 +23,14 @@ export const example = async () => {
 
   h2('The isReady promise is pending.');
   let didResolve = false;
-  isReady.isReady.then(() => {
+  isReady.promise.then(() => {
     didResolve = true;
   });
   p(`didResolve: ${didResolve}`);
 
   h2('The state is set to true.');
   isReady.state = true;
-  await isReady.isReady;
+  await isReady.promise;
   p(`isReady.state: ${isReady.state}`);
   p(`didResolve: ${didResolve}`);
 };

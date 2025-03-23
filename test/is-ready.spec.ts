@@ -40,11 +40,11 @@ describe('IsReady', () => {
 
       const isReady = IsReady.instance;
       expect(isReady.state).toBe(false);
-      isReady.isReady.then(() => {
+      isReady.promise.then(() => {
         isReady0 = true;
       });
 
-      isReady.isReady.then(() => {
+      isReady.promise.then(() => {
         isReady1 = true;
       });
 
@@ -54,7 +54,7 @@ describe('IsReady', () => {
       isReady.state = true;
 
       // Wait for the promise to resolve
-      await isReady.isReady;
+      await isReady.promise;
 
       expect(isReady0).toBe(true);
       expect(isReady1).toBe(true);
