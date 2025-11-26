@@ -33,13 +33,13 @@ git pull
 
 ## Set pull request title
 
-Replace `Remove unused dependencies` here and below
+Replace `Remove always-auth=true and update dependencies` here and below
 by your new pull request title.
 
 ## Create a feature branch
 
 ```bash
-node scripts/create-branch.js "Remove unused dependencies"
+node scripts/create-branch.js "Remove always-auth=true and update dependencies"
 ```
 
 ## Update dependencies
@@ -65,7 +65,7 @@ In Vscode, press
 
 ```bash
 git add .
-git commit -am"Remove unused dependencies"
+git commit -am"Remove always-auth=true and update dependencies"
 ```
 
 ## Increase version
@@ -78,7 +78,7 @@ git commit -am"Increase version"
 ## Run tests and build
 
 ```bash
-npm run build
+pnpm build
 ```
 
 ## Rebase main
@@ -96,7 +96,7 @@ node scripts/push-branch.js
 ## Create a pull request
 
 ```bash
-gh pr create --base main --title "Remove unused dependencies" --body " "
+gh pr create --base main --title "Remove always-auth=true and update dependencies" --body " "
 ```
 
 ## Code review
