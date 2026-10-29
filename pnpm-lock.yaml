@@ -15,8 +15,8 @@ importers:
         specifier: link:../dna_rljson
         version: link:../dna_rljson
       '@tssuite/helix-js':
-        specifier: ^0.3.0
-        version: 0.3.0
+        specifier: ^0.5.1
+        version: 0.5.1
       '@types/node':
         specifier: ^24.10.1
         version: 24.10.1
@@ -526,8 +526,8 @@ packages:
   '@standard-schema/spec@1.0.0':
     resolution: {integrity: sha512-m2bOd0f2RT9k8QJx1JN85cZYyH1RqFBdlwtkSlf4tBDYLCiiZnv1fIIwacK6cqwXavOydf0NPToMQgpKq+dVlA==}
 
-  '@tssuite/helix-js@0.3.0':
-    resolution: {integrity: sha512-CMMgTKYzgrAUStGsxXOE4seDs6XR+I/eMzQ+O4/95H/WeFk6Tf7/EOQlT6Zb/Z50sk9QJpXRU/Zj4Zy0QoiSaA==}
+  '@tssuite/helix-js@0.5.1':
+    resolution: {integrity: sha512-8i4zsO3uu3i9O8Ns5hFLVAtd3K4QiBP5v7QP7+s0an9idfC8KDt7AvuZkSZ2nh6iD5NKWN2f3ydRpblLFpv8pA==}
     engines: {node: '>=22'}
 
   '@types/argparse@1.0.38':
@@ -2076,7 +2076,7 @@ snapshots:
 
   '@standard-schema/spec@1.0.0': {}
 
-  '@tssuite/helix-js@0.3.0': {}
+  '@tssuite/helix-js@0.5.1': {}
 
   '@types/argparse@1.0.38': {}
 
