@@ -2,4 +2,4 @@
 // Kept in sync by test/is_ready_version.spec.ts.
 
 /** The version of the `@rljson/is-ready` package. */
-export const isReadyVersion = '0.0.20';
+export const isReadyVersion = '0.0.21';
